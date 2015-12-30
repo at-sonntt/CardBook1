@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <ImageView
+        android:id="@+id/imgOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:src="@drawable/ic_big"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/imgTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:src="@drawable/ic_big"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/imgThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:src="@drawable/ic_big"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/imgFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:src="@drawable/ic_big"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/imgFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:src="@drawable/ic_big"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription"/>
+
+
+
+</merge>

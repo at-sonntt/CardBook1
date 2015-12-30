@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_blue">#000099</color>
+    <color name="emerald">#2ecc71</color>
+    <color name="wisteria">#8e44ad</color>
+    <color name="clouds">#ecf0f1</color>
+    <color name="midnight_blue">#141d26</color>
+    <color name="dark_gray">#ccc</color>
+    <color name="black">#000</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="line_view">#f39c12</color>
+    <color name="red">#EE0000</color>
+    <color name="sliver">#e0e0e0</color>
+    <color name="sliver_dark">#9e9e9e</color>
+    <color name="grey_less">#BEBEBE</color>
+    <color name="bggrey">#CFCFCF</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+</resources>

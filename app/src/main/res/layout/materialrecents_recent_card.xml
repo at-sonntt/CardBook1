@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_250dp"
+        android:background="@drawable/test_card"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="詳細カード"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/margin_15dp"
+                android:paddingTop="@dimen/margin_10dp">
+
+                <ImageView
+                    android:id="@+id/img_start_first"
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:layout_toLeftOf="@+id/img_start_second"
+                    android:src="@drawable/ic_star_outline" />
+
+                <ImageView
+                    android:id="@+id/img_start_second"
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:layout_toLeftOf="@+id/img_start_third"
+                    android:src="@drawable/ic_star_outline" />
+
+                <ImageView
+                    android:id="@+id/img_start_third"
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:layout_toLeftOf="@+id/img_start_four"
+                    android:src="@drawable/ic_star_outline" />
+
+                <ImageView
+                    android:id="@+id/img_start_four"
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:layout_toLeftOf="@+id/img_start_five"
+                    android:src="@drawable/ic_star_outline" />
+
+                <ImageView
+                    android:id="@+id/img_start_five"
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_star_outline" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_start_five"
+                    android:gravity="right"
+                    android:text="標準のクレジットカード" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_20dp">
+
+            <ImageView
+                android:layout_width="@dimen/margin_70dp"
+                android:layout_height="@dimen/margin_70dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/imgo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/margin_15dp">
+
+                <TextView
+                    android:id="@+id/tvUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvInfo"
+                    android:text="詳細カード"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvUser"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:text="名前\n使用者"
+                    android:textColor="@color/red"
+                    android:textSize="5sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/margin_20dp"
+            android:paddingRight="@dimen/margin_20dp">
+
+            <LinearLayout
+                android:id="@+id/layout_card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_15dp"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/margin_5dp"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:gravity="left|center_vertical"
+                        android:text="年/月/日"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_35dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/tvNumCard_one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/sliver"
+                        android:gravity="center"
+                        android:text="5895"
+                        android:textColor="@color/sliver_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvNumCard_Two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_2dp"
+                        android:layout_weight="1"
+                        android:background="@color/sliver"
+                        android:gravity="center"
+                        android:text="3486"
+                        android:textColor="@color/sliver_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvNumCard_three"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_2dp"
+                        android:layout_weight="1"
+                        android:background="@color/sliver"
+                        android:gravity="center"
+                        android:text="@string/text_3135"
+                        android:textColor="@color/sliver_dark"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:gravity="center|right"
+                        android:text="@string/card_date_text"
+                        android:textSize="@dimen/text_size_10" />
+
+                    <TextView
+                        android:id="@+id/tvNumCard_four"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_2dp"
+                        android:layout_marginStart="@dimen/margin_2dp"
+                        android:layout_weight="1.6"
+                        android:background="@color/sliver"
+                        android:gravity="center"
+                        android:text="@string/date_card"
+                        android:textColor="@color/sliver_dark"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNumCard_five"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_35dp"
+                android:layout_below="@+id/layout_card"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:background="@color/sliver"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_2dp"
+                android:paddingRight="@dimen/margin_2dp"
+                android:text="@string/stamp"
+                android:textColor="@color/sliver_dark"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

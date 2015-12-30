@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lnActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBar">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/back_ic_50"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lnActionBar"
+        android:background="@color/line_view"/>
+
+    <LinearLayout
+        android:id="@+id/lnTab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view_line"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvTabOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="彼彼女"/>
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="50dp"
+            android:background="@color/line_view"/>
+
+        <TextView
+            android:id="@+id/tvTabTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="彼彼女"/>
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="50dp"
+            android:background="@color/line_view"/>
+
+        <TextView
+            android:id="@+id/tvTabThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="彼彼女"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line_two"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lnTab"
+        android:background="@color/line_view"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_line_two"/>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E8E8E8"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="おいしい眠り しい眠り"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lnText">
+
+            <ImageView
+                android:id="@+id/imgName"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/thit_xien"/>
+
+            <TextView
+                android:id="@+id/tvNameFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgName"
+                android:text="バーベキューの葉"/>
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNameFood"
+                android:layout_toRightOf="@+id/imgName"
+                android:paddingRight="5dp"
+                android:src="@drawable/ic_phone_android_black_18dp"/>
+
+            <TextView
+                android:id="@+id/tvTi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNameFood"
+                android:layout_toRightOf="@+id/imgLogo"
+                android:text="笑ヘクタール"/>
+
+            <TextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTi"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/imgName"
+                android:background="@drawable/backgroung_fill"
+                android:text="ああ疲れました"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTi"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvSubmit"
+                android:background="@drawable/background_text"
+                android:text="おいしい眠り"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
