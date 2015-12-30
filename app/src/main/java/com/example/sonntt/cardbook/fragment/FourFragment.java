@@ -30,6 +30,7 @@ public class FourFragment extends Fragment {
    }
 
     private void setupData(){
+
         mAdapter = new RecentsAdapter() {
             @Override
             public String getTitle(int position) {

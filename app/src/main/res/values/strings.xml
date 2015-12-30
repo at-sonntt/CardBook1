@@ -124,4 +124,10 @@
     <string name="history_clear_text">history_clear_text</string>
     <string name="msg_google_product">msg_google_product</string>
     <string name="msg_google_books">msg_google_books</string>
+    <string name="tab.mini_one">彼彼女</string>
+    <string name="tab.mini_two">彼彼女</string>
+    <string name="tab.mini_three">彼彼女</string>
+    <string name="two.fragment.tab.mini.text">彼彼女</string>
+    <string name="two.fragment.tab.mini.text_two">彼彼女</string>
+    <string name="two.fragment.tab.mini.text_three">彼彼女</string>
 </resources>

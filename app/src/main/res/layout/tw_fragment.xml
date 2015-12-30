@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
     <LinearLayout
         android:id="@+id/lnActionBar"
         android:layout_width="match_parent"
@@ -13,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:src="@drawable/back_ic_50"
-            />
+            tools:ignore="ContentDescription"/>
     </LinearLayout>
 
     <View
@@ -34,10 +36,10 @@
         <TextView
             android:id="@+id/tvTabOne"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/two.fragemnt.tab.mini.size_heigh"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="彼彼女"/>
+            android:text="@string/two.fragment.tab.mini.text"/>
 
         <View
             android:layout_width="0.1dp"
@@ -47,10 +49,10 @@
         <TextView
             android:id="@+id/tvTabTwo"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/two.fragemnt.tab.mini.size_heigh"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="彼彼女"/>
+            android:text="@string/two.fragment.tab.mini.text_two"/>
 
         <View
             android:layout_width="0.1dp"
@@ -60,10 +62,10 @@
         <TextView
             android:id="@+id/tvTabThree"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/two.fragemnt.tab.mini.size_heigh"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="彼彼女"/>
+            android:text="@string/two.fragment.tab.mini.text_three"/>
 
     </LinearLayout>
 
