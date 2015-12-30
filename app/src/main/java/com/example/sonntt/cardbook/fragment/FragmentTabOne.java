@@ -15,7 +15,7 @@ import org.androidannotations.annotations.ViewById;
 import java.util.ArrayList;
 
 /**
- * Created by sonntt on 12/29/15.
+ * @author SonNTT on 12/29/15.
  */
 @EFragment(R.layout.fragment_tab_one)
 public class FragmentTabOne extends Fragment {

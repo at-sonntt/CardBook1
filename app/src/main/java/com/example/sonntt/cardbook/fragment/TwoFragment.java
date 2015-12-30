@@ -28,6 +28,7 @@ public class TwoFragment extends Fragment {
     }
 
     public void setContainer(Fragment fragment, boolean isAddToBackStack) {
+
         FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.container, fragment);
         if (isAddToBackStack) {

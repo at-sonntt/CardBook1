@@ -11,11 +11,15 @@ import android.widget.LinearLayout;
 import com.example.sonntt.cardbook.R;
 
 /**
- * Created by sonntt on 12/29/15.
+ * @author SonNTT on 12/29/15.
  */
 public class TabBarCustom extends LinearLayout {
 
-    private ImageView mImageOne,mImageTwo, mImageThree, mImageFour, mImageFive;
+    private final ImageView mImageOne;
+    private final ImageView mImageTwo;
+    private final ImageView mImageThree;
+    private final ImageView mImageFour;
+    private final ImageView mImageFive;
 
     public TabBarCustom(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -28,10 +32,10 @@ public class TabBarCustom extends LinearLayout {
         inflater.inflate(R.layout.tab_custom, this, true);
 
         mImageOne = (ImageView) findViewById(R.id.imgOne);
-        mImageTwo = (ImageView) findViewById(R.id.imgTwo);;
+        mImageTwo = (ImageView) findViewById(R.id.imgTwo);
         mImageThree = (ImageView) findViewById(R.id.imgThree);
         mImageFour = (ImageView) findViewById(R.id.imgFour);
-         mImageFive = (ImageView) findViewById(R.id.imgFive);
+        mImageFive = (ImageView) findViewById(R.id.imgFive);
 
     }
 
@@ -39,7 +43,7 @@ public class TabBarCustom extends LinearLayout {
         this(context, null);
     }
 
-    public void setImageTabOne(){
+    public void setImageTabOne() {
 
         mImageOne.setVisibility(View.VISIBLE);
         mImageTwo.setVisibility(View.INVISIBLE);
@@ -48,7 +52,7 @@ public class TabBarCustom extends LinearLayout {
         mImageFive.setVisibility(View.INVISIBLE);
     }
 
-    public void setImageTabTwo(){
+    public void setImageTabTwo() {
 
         mImageTwo.setVisibility(View.VISIBLE);
 
@@ -58,7 +62,7 @@ public class TabBarCustom extends LinearLayout {
         mImageFive.setVisibility(View.INVISIBLE);
     }
 
-    public void setImageTabThree(){
+    public void setImageTabThree() {
 
         mImageThree.setVisibility(View.VISIBLE);
 
@@ -68,7 +72,7 @@ public class TabBarCustom extends LinearLayout {
         mImageFour.setVisibility(View.INVISIBLE);
     }
 
-    public void setImageTabFour(){
+    public void setImageTabFour() {
 
         mImageFour.setVisibility(View.VISIBLE);
 
@@ -78,7 +82,7 @@ public class TabBarCustom extends LinearLayout {
         mImageFive.setVisibility(View.INVISIBLE);
     }
 
-    public void setImageTabFive(){
+    public void setImageTabFive() {
 
         mImageFive.setVisibility(View.VISIBLE);
 
@@ -87,7 +91,8 @@ public class TabBarCustom extends LinearLayout {
         mImageFour.setVisibility(View.INVISIBLE);
         mImageThree.setVisibility(View.INVISIBLE);
     }
-    public void setTabDefault(){
+
+    public void setTabDefault() {
 
         mImageOne.setVisibility(View.VISIBLE);
 
@@ -96,8 +101,6 @@ public class TabBarCustom extends LinearLayout {
         mImageFour.setVisibility(View.INVISIBLE);
         mImageThree.setVisibility(View.INVISIBLE);
     }
-
-
 
 
 //    public void setImageVisible(boolean visible) {

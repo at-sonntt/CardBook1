@@ -33,9 +33,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created by sonntt on 12/23/15.
+ * @author SonNTT on 12/23/15.
  */
-@SuppressWarnings("DefaultFileTemplate")
 @EFragment(R.layout.one_fragment)
 public class OneFragment extends Fragment implements OnMapReadyCallback, GoogleMap.OnCameraChangeListener {
     @ViewById(R.id.recycleHeader)

@@ -12,7 +12,7 @@ import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EFragment;
 
 /**
- * Created by sonntt on 12/23/15.
+ * @author SonNTT on 12/23/15.
  */
 @EFragment(R.layout.four_fragment)
 public class FourFragment extends Fragment {
@@ -20,16 +20,15 @@ public class FourFragment extends Fragment {
     private RecentsAdapter mAdapter;
 
 
-
     @AfterViews
-    void afterView(){
+    void afterView() {
 
         setupData();
         RecentsList recents = (RecentsList) getView().findViewById(R.id.recents);
         recents.setAdapter(mAdapter);
-   }
+    }
 
-    private void setupData(){
+    private void setupData() {
 
         mAdapter = new RecentsAdapter() {
             @Override

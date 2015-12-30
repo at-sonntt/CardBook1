@@ -15,12 +15,11 @@ import org.androidannotations.annotations.ViewById;
 import java.util.ArrayList;
 
 /**
- * Created by sonntt on 12/23/15.
+ * @author SonNTT on 12/23/15.
  */
 @EFragment(R.layout.three_fragment)
 public class ThreeFragment extends Fragment {
 
-    ArrayList<DataFruits> mFruits;
     ArrayList<ExpandableListAdapter.Item> mDatas;
 
     @ViewById(R.id.recycleMain)
