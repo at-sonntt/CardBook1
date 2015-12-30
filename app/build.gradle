@@ -78,4 +78,8 @@ dependencies {
     compile 'com.android.support:design:23.1.1'
     compile 'com.nineoldandroids:library:2.4.0'
     compile files('libs/core-3.2.1.jar')
+    apt "org.projectlombok:lombok:1.16.4"
+    provided 'org.projectlombok:lombok:1.16.4'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+
 }

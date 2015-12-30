@@ -101,10 +101,4 @@ public class TabBarCustom extends LinearLayout {
         mImageFour.setVisibility(View.INVISIBLE);
         mImageThree.setVisibility(View.INVISIBLE);
     }
-
-
-//    public void setImageVisible(boolean visible) {
-//        mImage.setVisibility(visible ? View.VISIBLE : View.GONE);
-//    }
-
 }

@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:text="TabTwo"/>
+<com.example.sonntt.cardbook.until.ProgressWheel
+    android:id="@+id/progressBarTwo"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    ProgressWheel:pwTextColor="#222222"
+    ProgressWheel:pwTextSize="14sp"
+    ProgressWheel:pwRimColor="#44000000"
+    ProgressWheel:pwBarLength="60dp"
+    ProgressWheel:pwBarColor="#FFCC00"
+    ProgressWheel:pwBarWidth="25dp"
+    ProgressWheel:pwRimWidth="40dp"
+    ProgressWheel:pwSpinSpeed="3dp"/>
 </LinearLayout>
