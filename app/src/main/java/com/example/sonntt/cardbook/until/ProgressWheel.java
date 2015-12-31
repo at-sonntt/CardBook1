@@ -17,8 +17,6 @@ import com.example.sonntt.cardbook.R;
  * An indicator of progress, similar to Android's ProgressBar.
  *
  * @author Todd Davies
- *         <p/>
- *         See MIT-LICENSE.txt for licence details
  */
 public class ProgressWheel extends View {
 
@@ -90,22 +88,22 @@ public class ProgressWheel extends View {
      */
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-    	// The first thing that happen is that we call the superclass 
-    	// implementation of onMeasure. The reason for that is that measuring 
-    	// can be quite a complex process and calling the super method is a 
-    	// convenient way to get most of this complexity handled.
-    	super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        // The first thing that happen is that we call the superclass
+        // implementation of onMeasure. The reason for that is that measuring
+        // can be quite a complex process and calling the super method is a
+        // convenient way to get most of this complexity handled.
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 
-    	// We can’t use getWidth() or getHight() here. During the measuring 
-    	// pass the view has not gotten its final size yet (this happens first 
-    	// at the start of the layout pass) so we have to use getMeasuredWidth() 
-    	// and getMeasuredHeight().
+        // We can’t use getWidth() or getHight() here. During the measuring
+        // pass the view has not gotten its final size yet (this happens first
+        // at the start of the layout pass) so we have to use getMeasuredWidth()
+        // and getMeasuredHeight().
         int size = 0;
         int width = getMeasuredWidth();
         int height = getMeasuredHeight();
         int widthWithoutPadding = width - getPaddingLeft() - getPaddingRight();
         int heightWithoutPadding = height - getPaddingTop() - getPaddingBottom();
-        
+
         // Finally we have some simple logic that calculates the size of the view 
         // and calls setMeasuredDimension() to set that size.
         // Before we compare the width and height of the view, we remove the padding, 
@@ -124,7 +122,7 @@ public class ProgressWheel extends View {
             size = Math.max(heightWithoutPadding, widthWithoutPadding);
         }
 
-        
+
         // If you override onMeasure() you have to call setMeasuredDimension(). 
         // This is how you report back the measured size.  If you don’t call
         // setMeasuredDimension() the parent will throw an exception and your 
@@ -241,7 +239,9 @@ public class ProgressWheel extends View {
         barLength = (int) a.getDimension(R.styleable.ProgressWheel_pwBarLength, barLength);
 
         delayMillis = a.getInteger(R.styleable.ProgressWheel_pwDelayMillis, delayMillis);
-        if (delayMillis < 0) { delayMillis = 10; }
+        if (delayMillis < 0) {
+            delayMillis = 10;
+        }
 
         // Only set the text if it is explicitly defined
         if (a.hasValue(R.styleable.ProgressWheel_pwText)) {
@@ -296,7 +296,7 @@ public class ProgressWheel extends View {
     }
 
     private void scheduleRedraw() {
-    	progress += spinSpeed;
+        progress += spinSpeed;
         if (progress > 360) {
             progress = 0;
         }
@@ -304,12 +304,12 @@ public class ProgressWheel extends View {
     }
 
     /**
-    *   Check if the wheel is currently spinning
-    */
+     * Check if the wheel is currently spinning
+     */
     public boolean isSpinning() {
-    	return isSpinning;
+        return isSpinning;
     }
-    
+
     /**
      * Reset the count (in increment mode)
      */
@@ -349,6 +349,7 @@ public class ProgressWheel extends View {
         progress += amount;
         if (progress > 360)
             progress %= 360;
+
         postInvalidate();
     }
 
@@ -399,9 +400,9 @@ public class ProgressWheel extends View {
 
     public void setBarWidth(int barWidth) {
         this.barWidth = barWidth;
-        
-        if ( this.barPaint != null ) {
-        	this.barPaint.setStrokeWidth( this.barWidth );
+
+        if (this.barPaint != null) {
+            this.barPaint.setStrokeWidth(this.barWidth);
         }
     }
 
@@ -411,9 +412,9 @@ public class ProgressWheel extends View {
 
     public void setTextSize(int textSize) {
         this.textSize = textSize;
-        
-        if ( this.textPaint != null ) {
-        	this.textPaint.setTextSize( this.textSize );
+
+        if (this.textPaint != null) {
+            this.textPaint.setTextSize(this.textSize);
         }
     }
 
@@ -455,9 +456,9 @@ public class ProgressWheel extends View {
 
     public void setBarColor(int barColor) {
         this.barColor = barColor;
-        
-        if ( this.barPaint != null ) {
-        	this.barPaint.setColor( this.barColor );
+
+        if (this.barPaint != null) {
+            this.barPaint.setColor(this.barColor);
         }
     }
 
@@ -467,9 +468,9 @@ public class ProgressWheel extends View {
 
     public void setCircleColor(int circleColor) {
         this.circleColor = circleColor;
-        
-        if ( this.circlePaint != null ) {
-        	this.circlePaint.setColor( this.circleColor);
+
+        if (this.circlePaint != null) {
+            this.circlePaint.setColor(this.circleColor);
         }
     }
 
@@ -479,9 +480,9 @@ public class ProgressWheel extends View {
 
     public void setRimColor(int rimColor) {
         this.rimColor = rimColor;
-        
-        if ( this.rimPaint != null ) {
-        	this.rimPaint.setColor( this.rimColor );
+
+        if (this.rimPaint != null) {
+            this.rimPaint.setColor(this.rimColor);
         }
     }
 
@@ -499,9 +500,9 @@ public class ProgressWheel extends View {
 
     public void setTextColor(int textColor) {
         this.textColor = textColor;
-        
-        if ( this.textPaint != null ) {
-        	this.textPaint.setColor( this.textColor );
+
+        if (this.textPaint != null) {
+            this.textPaint.setColor(this.textColor);
         }
     }
 
@@ -519,9 +520,9 @@ public class ProgressWheel extends View {
 
     public void setRimWidth(int rimWidth) {
         this.rimWidth = rimWidth;
-        
-        if ( this.rimPaint != null ) {
-        	this.rimPaint.setStrokeWidth( this.rimWidth );
+
+        if (this.rimPaint != null) {
+            this.rimPaint.setStrokeWidth(this.rimWidth);
         }
     }
 
@@ -532,30 +533,32 @@ public class ProgressWheel extends View {
     public void setDelayMillis(int delayMillis) {
         this.delayMillis = delayMillis;
     }
-    
+
     public int getContourColor() {
-    	return contourColor;
-    }
-    
-    public void setContourColor(int contourColor) {
-    	this.contourColor = contourColor;
-    	
-    	if ( contourPaint != null ) {
-    		this.contourPaint.setColor( this.contourColor );
-    	}
-    }
-    
-    public float getContourSize() {
-    	return this.contourSize;
-    }
-    
-    public void setContourSize(float contourSize) {
-    	this.contourSize = contourSize;
-    	
-    	if ( contourPaint != null ) {
-    		this.contourPaint.setStrokeWidth( this.contourSize );
-    	}
+        return contourColor;
     }
 
-    public int getProgress() { return (int) progress; }
+    public void setContourColor(int contourColor) {
+        this.contourColor = contourColor;
+
+        if (contourPaint != null) {
+            this.contourPaint.setColor(this.contourColor);
+        }
+    }
+
+    public float getContourSize() {
+        return this.contourSize;
+    }
+
+    public void setContourSize(float contourSize) {
+        this.contourSize = contourSize;
+
+        if (contourPaint != null) {
+            this.contourPaint.setStrokeWidth(this.contourSize);
+        }
+    }
+
+    public int getProgress() {
+        return (int) progress;
+    }
 }

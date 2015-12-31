@@ -1,19 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
-              android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 <com.example.sonntt.cardbook.until.ProgressWheel
     android:id="@+id/progressBarTwo"
-    android:layout_width="150dp"
-    android:layout_height="150dp"
-    ProgressWheel:pwTextColor="#222222"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    ProgressWheel:pwTextColor="#00000000"
     ProgressWheel:pwTextSize="14sp"
-    ProgressWheel:pwRimColor="#44000000"
     ProgressWheel:pwBarLength="60dp"
-    ProgressWheel:pwBarColor="#FFCC00"
-    ProgressWheel:pwBarWidth="25dp"
-    ProgressWheel:pwRimWidth="40dp"
-    ProgressWheel:pwSpinSpeed="3dp"/>
-</LinearLayout>
+    ProgressWheel:pwBarColor="#FFCC33"
+    ProgressWheel:pwBarWidth="10dp"
+    ProgressWheel:pwRimWidth="18dp"
+    ProgressWheel:pwSpinSpeed="3dp"
+    android:layout_gravity="center"
+    ProgressWheel:pwText="đesdsfs"
+    ProgressWheel:pwContourColor="#EEEEEE"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会いまし"
+            android:gravity="center"
+            android:textColor="#8c6225"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dsdsds"
+            android:gravity="center"
+            android:textColor="#8c6225"
+            android:textSize="55sp"/>
+        <TextView
+            android:id="@+id/tvProgressMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/200"
+            android:gravity="center"
+            android:textColor="#8c6225"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

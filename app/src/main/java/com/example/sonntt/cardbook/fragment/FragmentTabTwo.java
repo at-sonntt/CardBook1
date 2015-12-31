@@ -2,6 +2,7 @@ package com.example.sonntt.cardbook.fragment;
 
 import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.widget.TextView;
 
 import com.example.sonntt.cardbook.R;
 import com.example.sonntt.cardbook.until.ProgressWheel;
@@ -22,8 +23,13 @@ public class FragmentTabTwo extends Fragment {
     @ViewById(R.id.progressBarTwo)
     ProgressWheel mProgressWheel;
 
+    @ViewById(R.id.tvProgress)
+    TextView mTvProgress;
+
     @AfterViews
     void afterView() {
+        // HandelSeekBar();
+        //  styleRandom(mProgressWheel, getActivity());
         HandelSeekBar();
     }
 
@@ -32,12 +38,15 @@ public class FragmentTabTwo extends Fragment {
         new Thread(new Runnable() {
             public void run() {
 
-                while (progressStatus < 100) {
+                while (progressStatus < 180) {
                     progressStatus += 1;
                     // Update the progress bar
                     mHandler.post(new Runnable() {
                         public void run() {
-                            mProgressWheel.setProgress(progressStatus);
+
+                            mProgressWheel.setProgress(progressStatus * 360 / 200);
+                            mProgressWheel.setText(String.valueOf(progressStatus));
+                            mTvProgress.setText(String.valueOf(progressStatus));
 
                         }
                     });
@@ -53,4 +62,5 @@ public class FragmentTabTwo extends Fragment {
             }
         }).start();
     }
+
 }
