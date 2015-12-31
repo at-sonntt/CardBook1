@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-<com.example.sonntt.cardbook.until.ProgressWheel
-    android:id="@+id/progressBarTwo"
-    android:layout_width="300dp"
-    android:layout_height="300dp"
-    ProgressWheel:pwTextColor="#00000000"
-    ProgressWheel:pwTextSize="14sp"
-    ProgressWheel:pwBarLength="60dp"
-    ProgressWheel:pwBarColor="#FFCC33"
-    ProgressWheel:pwBarWidth="10dp"
-    ProgressWheel:pwRimWidth="18dp"
-    ProgressWheel:pwSpinSpeed="3dp"
-    android:layout_gravity="center"
-    ProgressWheel:pwText="đesdsfs"
-    ProgressWheel:pwContourColor="#EEEEEE"/>
+<RelativeLayout xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+    <com.example.sonntt.cardbook.until.ProgressWheel
+        android:id="@+id/progressBarTwo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        ProgressWheel:pwBarColor="#FFCC33"
+        ProgressWheel:pwBarLength="60dp"
+        ProgressWheel:pwBarWidth="10dp"
+        ProgressWheel:pwContourColor="#EEEEEE"
+        ProgressWheel:pwRimWidth="18dp"
+        ProgressWheel:pwSpinSpeed="3dp"
+        ProgressWheel:pwTextColor="#00000000"
+        ProgressWheel:pwTextSize="14sp"/>
+
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -27,26 +30,32 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="会いまし"
             android:gravity="center"
+            android:text="会いまし"
             android:textColor="#8c6225"
-            android:textSize="15sp"/>
+            android:textSize="15sp"
+            tools:ignore="HardcodedText"/>
+
         <TextView
             android:id="@+id/tvProgress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="dsdsds"
             android:gravity="center"
+            android:text="dsdsds"
             android:textColor="#8c6225"
-            android:textSize="55sp"/>
+            android:textSize="55sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
         <TextView
             android:id="@+id/tvProgressMax"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="/200"
             android:gravity="center"
+            android:text="/200"
             android:textColor="#8c6225"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            tools:ignore="HardcodedText"/>
     </LinearLayout>
 
 </RelativeLayout>
