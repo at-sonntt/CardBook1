@@ -6,7 +6,6 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.sonntt.cardbook.CustomTab.TabBarCustom;
@@ -24,25 +23,6 @@ import org.androidannotations.annotations.ViewById;
 public class MainActivity extends AppCompatActivity {
     @ViewById(R.id.tab)
     TabLayout mTab;
-
-    @ViewById(R.id.imgOne)
-    ImageView imgOne;
-
-
-    @ViewById(R.id.imgTwo)
-    ImageView imgTwo;
-
-
-    @ViewById(R.id.imgThree)
-    ImageView imgThree;
-
-
-    @ViewById(R.id.imgFour)
-    ImageView imgFour;
-
-
-    @ViewById(R.id.imgFive)
-    ImageView imgFive;
 
     @ViewById(R.id.viewpager)
     ViewPager mViewPager;
